@@ -1,0 +1,76 @@
+@import "index.module.scss";
+
+@media screen and (max-width: 640px){
+  .slide{
+    // width: 50%;
+  }
+}
+
+@include media(">phone", "<tablet") {
+  .slide {
+    min-width: 332px;
+    height: 228px;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .h1 {
+      font-family: Rubik;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 24px;
+      letter-spacing: 0em;
+      text-align: center;
+      color: #2D3236;
+      word-wrap: normal;
+    }
+    .p {
+      font-family: Rubik;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 24px;
+      letter-spacing: 0em;
+      text-align: center;
+      color: rgba(128, 128, 128, 1);
+      ;
+    }
+  }
+}
+
+@include media(">tablet") {
+  .slide {
+    max-width: 332px;
+    height: 228px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .h1 {
+      font-family: Rubik;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 24px;
+      letter-spacing: 0em;
+      text-align: center;
+      color: #2D3236;
+      word-wrap: normal;
+    }
+    .p {
+      font-family: Rubik;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 24px;
+      letter-spacing: 0em;
+      text-align: center;
+      color: rgba(128, 128, 128, 1);
+    }
+  }
+}

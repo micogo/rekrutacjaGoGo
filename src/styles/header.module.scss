@@ -1,0 +1,29 @@
+@import "index.module.scss";
+@include media(">phone", "<tablet") {
+  header {
+    .logo {
+      width: 160px;
+      margin: 10px;
+    }
+  }
+}
+
+@include media(">tablet", "<=desktop") {
+  header {
+    padding-left: 10%;
+    .logo {
+      width: 160px;
+      margin: 10px;
+    }
+  }
+}
+
+@include media(">desktop") {
+  header {
+    padding-left: 10%;
+    .logo {
+      width: 160px;
+      margin: 10px;
+    }
+  }
+}

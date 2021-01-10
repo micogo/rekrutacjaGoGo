@@ -1,0 +1,105 @@
+@import "index.module.scss";
+
+@include media ("<phone"){
+    .container {
+        min-width: 556px;
+        background-color: rgba(241, 246, 252, 1);
+    }
+    .h1 {
+        text-align: center;
+        padding-top: 49px;
+      }
+      .divText {
+        width: 50%;
+        margin: auto;
+        text-align: center;
+      }
+      .mainContent{
+        max-width: 700px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding-bottom: 50px;
+      }
+}
+
+@include media(">phone", "<=tablet") {
+  .container {
+    background-color: rgba(241, 246, 252, 1);
+  }
+  .h1 {
+    text-align: center;
+    padding-top: 49px;
+  }
+  .divText {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+  }
+  .mainContent{
+    max-width: 700px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 50px;
+  }
+}
+
+@include media(">tablet", "<=desktop") {
+  .container {
+    background-color: rgba(241, 246, 252, 1);
+  }
+  .h1 {
+    text-align: center;
+    padding-top: 49px;
+  }
+  .divText {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+  }
+  .mainContent{
+    max-width: 700px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 50px;
+  }
+}
+
+@include media(">desktop", "retina2x") {
+  .container {
+    background-color: rgba(241, 246, 252, 1);
+  }
+
+  .h1 {
+    text-align: center;
+    padding-top: 49px;
+  }
+  .divText {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+  }
+
+  .mainContent{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 150px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+  .container {
+
+  }
+}

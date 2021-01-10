@@ -1,0 +1,171 @@
+@import "index.module.scss";
+
+@include media ("<phone"){
+    .container {
+        background-color: rgba(33, 83, 152, 1);
+        min-height: 466px;
+    
+        .h1 {
+          text-align: center;
+          padding-top: 49px;
+        }
+        .divText {
+          width: 50%;
+          margin: auto;
+          text-align: center;
+        }
+        .carouselPage {
+          max-width: 600px;
+          margin: auto;
+          margin-top: 40px;
+        }
+      }
+    
+      .sliderInnerDiv {
+        margin-top: 40px;
+        background-color: greenyellow;
+        max-width: 600px;
+        margin: auto;
+      }
+    
+      .dotRed {
+        width: 32px;
+        height: 32px;
+        margin-top: 40px;
+        background-color: #ff3859;
+        border-radius: 20px;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 90%);
+      }
+}
+
+@include media(">phone", "<=tablet") {
+  .container {
+    background-color: rgba(33, 83, 152, 1);
+    min-height: 466px;
+
+    .h1 {
+      text-align: center;
+      padding-top: 49px;
+    }
+    .divText {
+      width: 50%;
+      margin: auto;
+      text-align: center;
+    }
+    .carouselPage {
+      max-width: 700px;
+      margin: auto;
+      margin-top: 40px;
+    }
+  }
+
+  .sliderInnerDiv {
+    margin-top: 40px;
+    background-color: greenyellow;
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .dotRed {
+    width: 32px;
+    height: 32px;
+    margin-top: 40px;
+    background-color: #ff3859;
+    border-radius: 20px;
+    position: relative;
+    top: 15px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+  }
+}
+
+@include media(">tablet", "<=desktop") {
+  .container {
+    background-color: rgba(33, 83, 152, 1);
+    min-height: 466px;
+
+    .h1 {
+      text-align: center;
+      padding-top: 49px;
+    }
+    .divText {
+      width: 50%;
+      margin: auto;
+      text-align: center;
+    }
+    .carouselPage {
+      max-width: 700px;
+      margin: auto;
+      margin-top: 40px;
+    }
+  }
+
+  .sliderInnerDiv {
+    margin-top: 40px;
+    background-color: greenyellow;
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .dotRed {
+    width: 32px;
+    height: 32px;
+    margin-top: 40px;
+    background-color: #ff3859;
+    border-radius: 20px;
+    position: relative;
+    top: 15px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+  }
+}
+
+@include media(">desktop", "retina2x") {
+  .container {
+    background-color: rgba(33, 83, 152, 1);
+    min-height: 466px;
+
+    .h1 {
+      text-align: center;
+      padding-top: 49px;
+    }
+    .divText {
+      width: 50%;
+      margin: auto;
+      text-align: center;
+    }
+    .carouselPage {
+      max-width: 1100px;
+      margin: auto;
+      margin-top: 40px;
+    }
+  }
+
+  .sliderInnerDiv {
+    margin: auto;
+    margin-top: 40px;
+  }
+
+  .dotRed {
+    width: 32px;
+    height: 32px;
+    margin-top: 40px;
+    background-color: #ff3859;
+    border-radius: 20px;
+    position: relative;
+    top: 15px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+  .container {
+    .carouselPage {
+      margin-top: 40px;
+      max-width: 900px;
+    }
+  }
+}
