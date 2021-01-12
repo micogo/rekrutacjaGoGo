@@ -2,9 +2,7 @@ import React, { Component }  from 'react';
 import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
-import sliderStyles from "../styles/sliderContainer.module.scss"
 import Slide from "../components/slide"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import wordpress from '../images/logo-wordpress.svg'
 
 const settings = {
@@ -88,8 +86,7 @@ const CarouselPage = () => {
       </Slide>
       </div>
       <div>
-      <Slide slideHeader="Heading" slideP="Lorem ipsum dolor sit amet."></Slide>
-        <FontAwesomeIcon icon={['fab', 'apple']} />
+      <Slide slideHeader="Heading" slideP="Lorem ipsum dolor sit amet." imgName={wordpress}></Slide>
       </div>
     </Slider>
   )

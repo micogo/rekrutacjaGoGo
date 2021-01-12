@@ -1,28 +1,38 @@
 @import "index.module.scss";
 
-@include media ("<phone"){
-    .container {
-        min-width: 556px;
-        background-color: rgba(241, 246, 252, 1);
-    }
-    .h1 {
-        text-align: center;
-        padding-top: 49px;
-      }
-      .divText {
-        width: 50%;
-        margin: auto;
-        text-align: center;
-      }
-      .mainContent{
-        max-width: 700px;
-        margin: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        padding-bottom: 50px;
-      }
+@include media("<phone") {
+  .container {
+    min-width: 556px;
+    background-color: rgba(241, 246, 252, 1);
+  }
+  .h1 {
+    text-align: center;
+    padding-top: 49px;
+  }
+  .divText {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+  }
+  .h2 {
+    margin-top: 36px;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #2d3236;
+  }
+  .mainContent {
+    max-width: 700px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 50px;
+  }
 }
 
 @include media(">phone", "<=tablet") {
@@ -38,7 +48,17 @@
     margin: auto;
     text-align: center;
   }
-  .mainContent{
+  .h2 {
+    margin-top: 36px;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #2d3236;
+  }
+  .mainContent {
     max-width: 700px;
     margin: auto;
     display: flex;
@@ -62,7 +82,17 @@
     margin: auto;
     text-align: center;
   }
-  .mainContent{
+  .h2 {
+    margin-top: 36px;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #2d3236;
+  }
+  .mainContent {
     max-width: 700px;
     margin: auto;
     display: flex;
@@ -87,8 +117,18 @@
     margin: auto;
     text-align: center;
   }
+  .h2 {
+    margin-top: 36px;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #2d3236;
+  }
 
-  .mainContent{
+  .mainContent {
     max-width: 1100px;
     margin: auto;
     display: flex;
@@ -100,6 +140,5 @@
 
 @media screen and (min-width: 1024px) and (max-width: 1200px) {
   .container {
-
   }
 }

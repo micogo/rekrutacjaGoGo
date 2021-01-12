@@ -14,7 +14,7 @@ import "./layout.css"
 import SliderContainer from "../components/sliderContainer"
 import MainSection from "../components/mainSection"
 
-const Layout = ({ children }) => {
+const Layout = () => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -34,8 +34,8 @@ const Layout = ({ children }) => {
   )
 }
 
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
-}
+// Layout.propTypes = {
+//   children: PropTypes.node.isRequired,
+// }
 
 export default Layout
